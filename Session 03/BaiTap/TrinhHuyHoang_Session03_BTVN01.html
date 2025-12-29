@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN01</title>
+</head>
+<body>
+    <h1>Form Đặt Lịch Tư Vấn Học Tập</h1>
+    <form>
+        <label for="fullname">Họ và tên: </label>
+        <input type="text" id="fullname" name="fullname">
+        <br><br>
+
+        <label for="date">Chọn ngày giờ: </label>
+        <input type="date" name="date" id="date">
+        <br><br>
+
+        <label for="service">Loại dịch vụ: </label>
+        <select name="service" id="service">
+            <option value="TuVanHocTap">Tư vấn học tập</option>
+            <option value="HuongNghiep">Hướng nghiệp</option>
+        </select>
+        <br><br>
+
+        <label for="note">Ghi chú: </label>
+        <textarea name="note" id="note"></textarea>
+        <br><br>
+
+        <button type="submit">Đặt lịch</button>
+    </form>
+</body>
+</html>
