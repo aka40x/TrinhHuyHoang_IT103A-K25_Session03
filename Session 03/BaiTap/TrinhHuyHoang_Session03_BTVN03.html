@@ -9,78 +9,83 @@
 
 <body>
     <form action="/submit-data">
-        <label>
-            Họ và tên:
-            <input type="text" name="fullname" />
-        </label>
-        <br /><br />
+        <table cellpadding="5">
 
-        <label>
-            Email:
-            <input type="email" name="email" />
-        </label>
-        <br /><br />
+            <tr>
+                <td><label for="fullname">Họ và tên:</label></td>
+                <td><input type="text" id="fullname" name="fullname"></td>
+            </tr>
 
-        <label>
-            Ngày sinh:
-            <input type="date" name="birthday" />
-        </label>
-        <br /><br />
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
 
-        <label>
-            Giới tính:
-            <input type="radio" name="gender" value="Nam" /> Nam
-            <input type="radio" name="gender" value="Nu" /> Nữ
-        </label>
-        <br /><br />
+            <tr>
+                <td><label for="birthday">Ngày sinh:</label></td>
+                <td><input type="date" id="birthday" name="birthday"></td>
+            </tr>
 
-        <label>
-            Số điện thoại:
-            <input type="text" name="phone" />
-        </label>
-        <br /><br />
+            <tr>
+                <td>Giới tính:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Nam">
+                    <label for="male">Nam</label>
 
-        <label>
-            Chuyên ngành:
-            <input type="text" name="major" />
-        </label>
-        <br /><br />
+                    <input type="radio" id="female" name="gender" value="Nu">
+                    <label for="female">Nữ</label>
+                </td>
+            </tr>
 
-        <label>
-            Năm nhập học:
-            <input type="number" name="year" />
-        </label>
-        <br /><br />
+            <tr>
+                <td><label for="phone">Số điện thoại:</label></td>
+                <td><input type="text" id="phone" name="phone"></td>
+            </tr>
 
-        <label>
-            Điểm GPA:
-            <input type="number" step="0.01" name="gpa" />
-        </label>
-        <br /><br />
+            <tr>
+                <td><label for="major">Chuyên ngành:</label></td>
+                <td><input type="text" id="major" name="major"></td>
+            </tr>
 
-        <label>
-            Địa chỉ:
-            <textarea name="address" rows="4" cols="40"></textarea>
-        </label>
-        <br /><br />
+            <tr>
+                <td><label for="year">Năm nhập học:</label></td>
+                <td><input type="number" id="year" name="year"></td>
+            </tr>
 
-        <label>
-            Lớp học:
-            <select name="class">
-                <option>Lớp 1</option>
-                <option>Lớp 2</option>
-                <option>Lớp 3</option>
-            </select>
-        </label>
-        <br /><br />
+            <tr>
+                <td><label for="gpa">Điểm GPA:</label></td>
+                <td><input type="number" step="0.01" id="gpa" name="gpa"></td>
+            </tr>
 
-        <label>
-            Ngày đăng ký học:
-            <input type="datetime-local" name="register_date" />
-        </label>
-        <br /><br />
+            <tr>
+                <td><label for="address">Địa chỉ:</label></td>
+                <td>
+                    <textarea id="address" name="address" rows="3" cols="30"></textarea>
+                </td>
+            </tr>
 
-        <input type="submit" value="Gửi thông tin" />
+            <tr>
+                <td><label for="class">Lớp học:</label></td>
+                <td>
+                    <select id="class" name="class">
+                        <option>Lớp 1</option>
+                        <option>Lớp 2</option>
+                        <option>Lớp 3</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="register_date">Ngày đăng ký học:</label></td>
+                <td><input type="datetime-local" id="register_date" name="register_date"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Gửi thông tin"></td>
+            </tr>
+
+        </table>
     </form>
 </body>
 
